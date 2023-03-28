@@ -1,0 +1,435 @@
+commit 5097a60e02e30bd6d7532f5c3b0df501d424271e
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sun May 1 20:36:46 2022 +0200
+
+    US1003: Review: Fix bugs with database
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customermanagement/RegisterCustomerUI.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/RegisterWarehouseUI.java
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/BackofficeUsersBootstrapper.java
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/CustomerBootstrapper.java
+M	base.core/src/main/java/eapli/base/customermanagement/application/RegisterCustomerController.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/PhoneCustomer.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/application/RegisterWarehouseController.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/domain/Warehouse.java
+
+commit f9345c9ab8344ad22b0f70d19786cba0d87c1c48
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sun May 1 15:46:01 2022 +0200
+
+    US1003: Review: Fixed bugs
+
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+M	run-bootstrap.bat
+M	run-bootstrap.sh
+
+commit 6c8fb493a9bbd5574a30be75008601e864c2b916
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sat Apr 30 18:02:11 2022 +0200
+
+    Updated Planeamento.md
+
+M	docs/Planeamento.md
+
+commit c72a96c051f61d738ce3a032b60f79234fa374bc
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sat Apr 30 04:45:28 2022 +0100
+
+    US1003: Review: Reviewed some files
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customermanagement/RegisterCustomerUI.java
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/CustomerBootstrapper.java
+M	base.core/src/main/java/eapli/base/customermanagement/application/RegisterCustomerController.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/Customer.java
+M	base.core/src/main/java/eapli/base/customermanagement/repositories/CustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryCustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaCustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+
+commit 680501f1a3c7e06cfd3d766cd0976459240a659a
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Fri Apr 29 08:20:25 2022 +0100
+
+    US1003: Implementation: Fixed bug where database stored hexadecimal values
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customermanagement/RegisterCustomerUI.java
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/CustomerBootstrapper.java
+M	base.core/src/main/java/eapli/base/customermanagement/application/dto/CustomerDTO.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/BirthDateCustomer.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/Customer.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/GenderCustomer.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/NameCustomer.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/PhoneCustomer.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/VATCustomer.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaCustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+
+commit c8fd96f55c4959f3c7c610c1da4d9559b20ff518
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Thu Apr 28 09:01:57 2022 +0100
+
+    US1003: Implementation: Customer is being created and stored in the database
+
+M	.idea/compiler.xml
+M	.idea/dataSources.xml
+M	.idea/misc.xml
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/AddUserUI.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customermanagement/RegisterCustomerUI.java
+M	base.app.bootstrap/src/main/java/eapli/base/app/bootstrap/BaseBootstrap.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/CustomerBootstrapper.java
+M	base.core/pom.xml
+M	base.core/src/main/java/eapli/base/customermanagement/application/RegisterCustomerController.java
+M	base.core/src/main/java/eapli/base/customermanagement/application/RegisterCustomerService.java
+A	base.core/src/main/java/eapli/base/customermanagement/application/dto/CustomerDTO.java
+A	base.core/src/main/java/eapli/base/customermanagement/application/viadto/RegisterCustomerViaDTOController.java
+A	base.core/src/main/java/eapli/base/customermanagement/application/viadto/RegisterCustomerViaDTOService.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/BirthDateCustomer.java
+M	base.core/src/main/java/eapli/base/customermanagement/domain/Customer.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/CustomerBuilder.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/EmailCustomer.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/GenderCustomer.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/IdCustomer.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/NameCustomer.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/PhoneCustomer.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/ShortNameCustomer.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/VATCustomer.java
+M	base.core/src/main/java/eapli/base/customermanagement/repositories/CustomerRepository.java
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+M	base.core/src/main/java/eapli/base/usermanagement/domain/BaseRoles.java
+A	base.core/src/main/java/eapli/base/utils/PasswordGenerator.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryCustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaCustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+M	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+D	docs/DM.vpp.bak_000f
+D	docs/Sprint B/US1003/SD.vpp.bak_000f
+M	pom.xml
+M	run-backoffice.sh
+M	run-bootstrap.sh
+
+commit 28cb0049c46a99004b5eea21374a9082f53971e6
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Thu Apr 28 09:00:20 2022 +0100
+
+    Updated Domain Model
+
+A	docs/DM.md
+M	docs/DM.svg
+
+commit aaca5122729069056d0873158d6c5908e4feb952
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Thu Apr 28 08:59:42 2022 +0100
+
+    Updated UCD
+
+M	docs/UCD.svg
+
+commit c9849a6e6e9ae0ee5a7c4dc3762a334a4b370fe1
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Thu Apr 28 08:59:14 2022 +0100
+
+    US1003: Design: Add Sequence Diagram - SD
+
+M	docs/Sprint B/US1003/SD.svg
+M	docs/Sprint B/US1003/SD.vpp
+
+commit 5d952504817131e7b06d61b00a70fe38c435e30f
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Thu Apr 28 08:58:27 2022 +0100
+
+    Added data model
+
+M	docs/DataModel.svg
+M	docs/DataModel.vpp
+
+commit 1aaba57b9c03af5879e86777d040e8e51e01fd59
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Thu Apr 28 08:56:12 2022 +0100
+
+    US1003: Design: Add Class Diagram - CD
+
+M	docs/Sprint B/US1003/CD.svg
+M	docs/Sprint B/US1003/CD.vpp
+
+commit bc121a0b383866c096b0f94d5e68c22bea89e380
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Thu Apr 28 08:55:10 2022 +0100
+
+    US1003: Design: Add System Sequence Diagram - SSD
+
+A	.idea/jpa-buddy.xml
+A	docs/Sprint B/US1003/SSD.md
+A	docs/Sprint B/US1003/SSD.svg
+
+commit a1a49d7726cdd41eeb4df6cc4b8faa86d4c0c39a
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sun Apr 24 23:01:22 2022 +0100
+
+    US1003: Implementation: Added class Customer
+
+A	.idea/dataSources.xml
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/customermanagement/RegisterCustomerUI.java
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/BackofficeUsersBootstrapper.java
+A	base.core/src/main/java/eapli/base/customermanagement/application/RegisterCustomerController.java
+A	base.core/src/main/java/eapli/base/customermanagement/application/RegisterCustomerService.java
+A	base.core/src/main/java/eapli/base/customermanagement/domain/Customer.java
+A	base.core/src/main/java/eapli/base/customermanagement/repositories/CustomerRepository.java
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+M	base.core/src/main/java/eapli/base/usermanagement/domain/BaseRoles.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryCustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaCustomerRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+M	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+A	docs/DM.vpp.bak_000f
+D	docs/DomainModel.svg
+M	docs/Sprint B/US1003/ProcessoEngenhariaFuncionalidade.md
+
+commit dfce232eea0734565b7b4e2f6a9688b262fe075a
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sun Apr 24 23:00:17 2022 +0100
+
+    Added Domain Model
+
+A	docs/DM.svg
+
+commit 8efa4bb8bee9e43a220c2f01eb142fa8d9554f2d
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sun Apr 24 22:59:52 2022 +0100
+
+    US1003: Design: Class Diagram
+
+A	docs/Sprint B/US1003/CD.svg
+A	docs/Sprint B/US1003/CD.vpp
+
+commit 2f6d60c0bd1a6568331050fcdaf9b221096cb6d1
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sun Apr 24 22:59:29 2022 +0100
+
+    US1003: Design: Sequence Diagram
+
+A	docs/Sprint B/US1003/SD.svg
+A	docs/Sprint B/US1003/SD.vpp
+A	docs/Sprint B/US1003/SD.vpp.bak_000f
+
+commit fd4d8aa8b7245a5c3e4d5191fa8bf8401f7692b4
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sat Apr 23 12:59:25 2022 +0100
+
+    Updated some files
+
+A	docs/1200626/ListaFuncionalidadesEstudante.md
+R100	docs/Sprint A/G002/DomainModel.svg	docs/DomainModel.svg
+A	docs/Planeamento.md
+D	docs/Sprint A/G002/DM.vpp
+D	docs/Sprint A/Planeamento.md
+R100	docs/Sprint A/ProcessoEngenhariaFuncionalidade.md	docs/Sprint B/US1003/ProcessoEngenhariaFuncionalidade.md
+R100	docs/Sprint A/ListaFuncionalidadesEstudante.md	docs/Templates/ListaFuncionalidadesEstudante.md
+A	docs/Templates/ProcessoEngenhariaFuncionalidade.md
+
+commit 2ffbfd910c92b38c35f1abb7be20de0e2267affb
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sat Apr 23 12:58:54 2022 +0100
+
+    Added Data Model
+
+A	docs/DataModel.svg
+A	docs/DataModel.vpp
+
+commit a3634c4d413e8d0dfad5d60a0c5cfd9c98e30094
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sat Apr 23 12:58:02 2022 +0100
+
+    Added DM
+
+A	docs/DM.vpp
+
+commit 335393cff0bd78a397e3791db2950707dce73175
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sat Apr 23 12:57:32 2022 +0100
+
+    Added UCD
+
+A	docs/UCD.md
+A	docs/UCD.svg
+
+commit e224bf15565b4d47df945a2bcfc7123d92b22f0b
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Wed Apr 13 16:32:04 2022 +0100
+
+    app.common.console pom.xml fix
+
+A	.gitignore
+A	.idea/.gitignore
+A	.idea/compiler.xml
+A	.idea/encodings.xml
+A	.idea/jarRepositories.xml
+A	.idea/misc.xml
+A	.idea/vcs.xml
+M	base.app.common.console/pom.xml
+D	docs/Sprint A/G002/.DM.vpp.lck
+
+commit e6c54373fbd2f3af34965b61f57c0d8521a9cb84
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sun Apr 10 21:54:49 2022 +0100
+
+    G002: Design: Add Domain Model
+
+A	docs/Sprint A/G002/.DM.vpp.lck
+A	docs/Sprint A/G002/DM.vpp
+A	docs/Sprint A/G002/DomainModel.svg
+A	docs/Sprint A/ListaFuncionalidadesEstudante.md
+A	docs/Sprint A/Planeamento.md
+A	docs/Sprint A/ProcessoEngenhariaFuncionalidade.md
+
+commit e6fba1b63cae2f2f49dd8533f586a291f10f2268
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Wed Apr 6 18:42:21 2022 +0100
+
+    Initial commit
+
+A	README.md
+A	base.app.backoffice.console/.gitignore
+A	base.app.backoffice.console/pom.xml
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/BaseBackoffice.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/AddUserAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/AddUserUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/DeactivateUserAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/DeactivateUserUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/ListUsersAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/ListUsersUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/authz/SystemUserPrinter.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/clientuser/AcceptRefuseSignupRequestAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/clientuser/AcceptRefuseSignupRequestUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/clientuser/SignupRequestPrinter.java
+A	base.app.backoffice.console/src/main/resources/application.properties
+A	base.app.backoffice.console/src/main/resources/logback.xml
+A	base.app.backoffice.console/src/test/java/eapli/base/app/other/console/BaseBackofficeTest.java
+A	base.app.bootstrap/.gitignore
+A	base.app.bootstrap/pom.xml
+A	base.app.bootstrap/src/main/java/eapli/base/app/bootstrap/BaseBootstrap.java
+A	base.app.bootstrap/src/main/resources/application.properties
+A	base.app.bootstrap/src/main/resources/logback.xml
+A	base.app.common.console/.gitignore
+A	base.app.common.console/pom.xml
+A	base.app.common.console/src/main/java/eapli/base/app/common/console/BaseApplication.java
+A	base.app.common.console/src/main/java/eapli/base/app/common/console/presentation/authz/ChangePasswordUI.java
+A	base.app.common.console/src/main/java/eapli/base/app/common/console/presentation/authz/LoginAction.java
+A	base.app.common.console/src/main/java/eapli/base/app/common/console/presentation/authz/LoginUI.java
+A	base.app.common.console/src/main/java/eapli/base/app/common/console/presentation/authz/LogoutAction.java
+A	base.app.common.console/src/main/java/eapli/base/app/common/console/presentation/authz/LogoutUI.java
+A	base.app.common.console/src/main/java/eapli/base/app/common/console/presentation/authz/MyUserMenu.java
+A	base.app.common.console/src/test/java/eapli/base/consoleapp/common/AppTest.java
+A	base.app.other.console/.gitignore
+A	base.app.other.console/pom.xml
+A	base.app.other.console/src/main/java/eapli/base/app/other/console/OtherApp.java
+A	base.app.other.console/src/main/java/eapli/base/app/other/console/presentation/MainMenu.java
+A	base.app.other.console/src/main/resources/application.properties
+A	base.app.other.console/src/main/resources/logback.xml
+A	base.app.other.console/src/test/java/eapli/base/app/other/console/OtherAppTest.java
+A	base.app.user.console/.gitignore
+A	base.app.user.console/pom.xml
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/BaseUserApp.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/ClientUserBaseUI.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/FrontMenu.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/MainMenu.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/myuser/SignupRequestAction.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/myuser/SignupRequestUI.java
+A	base.app.user.console/src/main/java/eapli/base/app/user/console/presentation/myuser/UserDataWidget.java
+A	base.app.user.console/src/main/resources/application.properties
+A	base.app.user.console/src/main/resources/logback.xml
+A	base.app.user.console/src/test/java/eapli/base/utente/consoleapp/AppTest.java
+A	base.bootstrappers/.gitignore
+A	base.bootstrappers/pom.xml
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/BaseBootstrapper.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/MasterUsersBootstrapper.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/TestDataConstants.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/UsersBootstrapperBase.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/BackofficeUsersBootstrapper.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/BaseDemoBootstrapper.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/ClientUserBootstrapper.java
+A	base.bootstrappers/src/main/java/eapli/base/infrastructure/smoketests/BaseDemoSmokeTester.java
+A	base.bootstrappers/src/main/resources/application.properties
+A	base.bootstrappers/src/test/java/eapli/base/bootstrapapp/AppTest.java
+A	base.core/pom.xml
+A	base.core/src/main/java/eapli/base/AppSettings.java
+A	base.core/src/main/java/eapli/base/Application.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/AcceptRefuseSignupFactory.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/AcceptRefuseSignupRequestController.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/AcceptRefuseSignupRequestControllerEventfullImpl.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/AcceptRefuseSignupRequestControllerTxImpl.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/ClientUserService.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/ListClientUsersController.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/eventhandlers/AddClientUserOnSignupAcceptedController.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/application/eventhandlers/NewUserRegisteredFromSignupWatchDog.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/ApprovalStatus.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/ClientUser.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/ClientUserBuilder.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/MecanographicNumber.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/SignupRequest.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/SignupRequestBuilder.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/events/NewUserRegisteredFromSignupEvent.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/domain/events/SignupAcceptedEvent.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/repositories/ClientUserRepository.java
+A	base.core/src/main/java/eapli/base/clientusermanagement/repositories/SignupRequestRepository.java
+A	base.core/src/main/java/eapli/base/infrastructure/persistence/PersistenceContext.java
+A	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+A	base.core/src/main/java/eapli/base/myclientuser/application/MyClientUserService.java
+A	base.core/src/main/java/eapli/base/myclientuser/application/SignupController.java
+A	base.core/src/main/java/eapli/base/usermanagement/application/AddUserController.java
+A	base.core/src/main/java/eapli/base/usermanagement/application/DeactivateUserController.java
+A	base.core/src/main/java/eapli/base/usermanagement/application/ListUsersController.java
+A	base.core/src/main/java/eapli/base/usermanagement/application/eventhandlers/AddUserOnSignupAcceptedController.java
+A	base.core/src/main/java/eapli/base/usermanagement/application/eventhandlers/SignupAcceptedWatchDog.java
+A	base.core/src/main/java/eapli/base/usermanagement/domain/BasePasswordPolicy.java
+A	base.core/src/main/java/eapli/base/usermanagement/domain/BaseRoles.java
+A	base.core/src/main/java/eapli/base/usermanagement/domain/UserBuilderHelper.java
+A	base.core/src/main/resources/ecafeteria.sample.properties
+A	base.core/src/test/java/eapli/base/clientusermanagement/domain/ClientUserTest.java
+A	base.persistence.impl/pom.xml
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryClientUserRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryInitializer.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemorySignupRequestRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/BaseJpaReportingRepositoryBase.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/BasepaRepositoryBase.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaClientUserRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaSignupRequestRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/PersistenceSettings.java
+A	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+A	build-all.bat
+A	build-all.sh
+A	license.txt
+A	pipeline.bat
+A	pom.xml
+A	quickbuild.bat
+A	rebuild-all.bat
+A	rebuild-all.sh
+A	run-backoffice.bat
+A	run-backoffice.sh
+A	run-bootstrap.bat
+A	run-bootstrap.sh
+A	run-other.bat
+A	run-other.sh
+A	run-user.bat
+A	run-user.sh
+
+commit 4662c52134814898a363edc16269976e49236c07
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Wed Apr 6 17:35:58 2022 +0000
+
+    .gitignore edited online with Bitbucket
+
+D	.gitignore
+
+commit 6fad7241109276b03e38588b3722aea4d74823df
+Author: Tiago André Macedo Pinto <1200626@isep.ipp.pt>
+Date:   Sat Mar 26 12:42:15 2022 +0000
+
+    Initial commit
+
+A	.gitignore

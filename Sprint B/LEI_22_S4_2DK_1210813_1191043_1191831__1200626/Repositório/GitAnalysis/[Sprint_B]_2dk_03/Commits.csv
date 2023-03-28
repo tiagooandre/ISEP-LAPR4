@@ -1,0 +1,58 @@
+4b47e0c,2022-05-01 20:27:41 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Small Bugfix
+20c760e,2022-05-01 19:54:31 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Added the option to register a new Warehouse (Testing purposes)
+208627f,2022-05-01 19:53:53 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Added the option to import and list all the entities to the main menu
+7669372,2022-05-01 19:52:57 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created an Action and UI classes for importing the Warehouse layout
+e4b3064,2022-05-01 19:52:00 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Added all the entities to both JPA and InMemory repository factories
+d094482,2022-05-01 19:50:35 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created the class ParserJSON to import the layout of a Warehouse from a JSON file
+87c9ccd,2022-05-01 19:48:13 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created an InMemory Repository for all entities (Warehouse, WAisle, WRow, AGVDock, Coordinates)
+1c26b42,2022-05-01 19:47:40 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created a JPA Repository for all entities (Warehouse, WAisle, WRow, AGVDock, Coordinates)
+7a5213d,2022-05-01 19:45:47 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created an Action, UI and Printer Class to list AGVDocks
+62aeab1,2022-05-01 19:45:47 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created an Action, UI and Printer Class to list Coordinates
+993d6e1,2022-05-01 19:45:47 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created an Action, UI and Printer Class to list Warehouses
+e4e7d2d,2022-05-01 19:45:47 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created an Action, UI and Printer Class to list WAisles
+863bc08,2022-05-01 19:45:46 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created an Action, UI and Printer Class to list WRows
+636c9db,2022-05-01 19:38:21 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created a new user with the role WAREHOUSE_EMPLOYEE
+5097a60,2022-05-01 20:36:46 +0200,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Review: Fix bugs with database
+6736e31,2022-05-01 19:32:35 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created Controllers to list each entity (Warehouse, WAisle, WRow, AGVDock and Coordinates)
+0471713,2022-05-01 19:26:05 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created Coordinates entity
+0f3bc71,2022-05-01 19:25:52 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created AGVDock entity
+2809678,2022-05-01 19:25:30 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created WRow entity
+dc84e75,2022-05-01 19:25:18 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Created WAisle entity
+f76bd62,2022-05-01 19:17:17 +0100,Hugo Carvalho,1210813@isep.ipp.pt,US-2001: Implementation: Added AGVDocks field to Warehouse entity
+f9345c9,2022-05-01 15:46:01 +0200,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Review: Fixed bugs
+1c943bb,2022-04-30 21:26:06 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Created an Action, a Menu and a Printer to list all existing Warehouses
+a080ba5,2022-04-30 21:25:40 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Created an Action and a Menu to register and new Warehouse
+b85bd19,2022-04-30 21:25:02 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Added a new User to the BackofficeUsersBootstrapper
+0db1fe5,2022-04-30 21:18:51 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Renamed the class BasepaRepositoryBase to BaseJpaRepositoryBase
+ab9de5f,2022-04-30 21:18:23 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Created InMemory and JPA repositories for the Warehouse entity
+f6fad2e,2022-04-30 21:16:35 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Created a controller to register Warehouses, and another one to List them
+19f297d,2022-04-30 21:15:21 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Created a class for the Warehouse entity
+cd1eacb,2022-04-30 18:26:36 +0000,Hugo Henrique Almeida Carvalho,1210813@isep.ipp.pt,Updated .gitignore to include ".idea" folder
+bb70eab,2022-04-30 19:18:25 +0100,Hugo Carvalho,1210813@isep.ipp.pt,Fixed an issue with backoffice and bootstrap scripts
+6c8fb49,2022-04-30 18:02:11 +0200,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Updated Planeamento.md
+13c33e2,2022-04-30 16:29:11 +0100,Rui Gon�alves,1191831@isep.ipp.pt,US1001: Product Menu UI
+95e18b7,2022-04-30 16:17:49 +0100,Rui Gon�alves,1191831@isep.ipp.pt,US1001: Product Repository + Controller
+164800f,2022-04-30 15:45:46 +0100,Rui Gon�alves,1191831@isep.ipp.pt,US1001: Product Entity created
+375a8db,2022-04-30 15:37:01 +0100,Rui Gon�alves,1191831@isep.ipp.pt,US1001: Sequence Diagram + System Sequence Diagram + Class Diagram
+c72a96c,2022-04-30 04:45:28 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Review: Reviewed some files
+680501f,2022-04-29 08:20:25 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Implementation: Fixed bug where database stored hexadecimal values
+c8fd96f,2022-04-28 09:01:57 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Implementation: Customer is being created and stored in the database
+28cb004,2022-04-28 09:00:20 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Updated Domain Model
+aaca512,2022-04-28 08:59:42 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Updated UCD
+c9849a6,2022-04-28 08:59:14 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Design: Add Sequence Diagram - SD
+5d95250,2022-04-28 08:58:27 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Added data model
+1aaba57,2022-04-28 08:56:12 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Design: Add Class Diagram - CD
+bc121a0,2022-04-28 08:55:10 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Design: Add System Sequence Diagram - SSD
+a1a49d7,2022-04-24 23:01:22 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Implementation: Added class Customer
+dfce232,2022-04-24 23:00:17 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Added Domain Model
+8efa4bb,2022-04-24 22:59:52 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Design: Class Diagram
+2f6d60c,2022-04-24 22:59:29 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,US1003: Design: Sequence Diagram
+fd4d8aa,2022-04-23 12:59:25 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Updated some files
+2ffbfd9,2022-04-23 12:58:54 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Added Data Model
+a3634c4,2022-04-23 12:58:02 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Added DM
+335393c,2022-04-23 12:57:32 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Added UCD
+e224bf1,2022-04-13 16:33:53 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,app.common.console pom.xml fix
+e6c5437,2022-04-10 21:54:49 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,G002: Design: Add Domain Model
+e6fba1b,2022-04-06 18:42:21 +0100,Tiago André Macedo Pinto,1200626@isep.ipp.pt,Initial commit
+4662c52,2022-04-06 17:35:58 +0000,Tiago Andr� Macedo Pinto,1200626@isep.ipp.pt,.gitignore edited online with Bitbucket
+6fad724,2022-03-26 12:42:15 +0000,Tiago Andr� Macedo Pinto,1200626@isep.ipp.pt,Initial commit

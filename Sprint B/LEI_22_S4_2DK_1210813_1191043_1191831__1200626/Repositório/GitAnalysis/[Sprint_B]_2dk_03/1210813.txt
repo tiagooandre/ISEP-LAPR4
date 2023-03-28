@@ -1,0 +1,285 @@
+commit 4b47e0c773ffc8a9cd48a073225ab4d2bd9d9ae1
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 20:27:41 2022 +0100
+
+    US-2001: Implementation: Small Bugfix
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/RegisterWarehouseUI.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/domain/Warehouse.java
+
+commit 20c760e36ad4281bee2c1383fbb2bcd9c3f63a3d
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:54:31 2022 +0100
+
+    US-2001: Implementation: Added the option to register a new Warehouse (Testing purposes)
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Actions/RegisterWarehouseAction.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/RegisterWarehouseUI.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/application/RegisterWarehouseController.java
+
+commit 208627fb3bbc4616c6323ae0c8df3430cd2e5067
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:53:53 2022 +0100
+
+    US-2001: Implementation: Added the option to import and list all the entities to the main menu
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+
+commit 766937200568dd33ef6d729991d184ddd34f099b
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:52:57 2022 +0100
+
+    US-2001: Implementation: Created an Action and UI classes for importing the Warehouse layout
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Actions/ImportWarehouseAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ImportWarehouseUI.java
+
+commit e4b306403904326aec1e05c12b8c24bc20423953
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:52:00 2022 +0100
+
+    US-2001: Implementation: Added all the entities to both JPA and InMemory repository factories
+
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+
+commit d09448272700d6607b1692314b31f549c966732b
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:50:35 2022 +0100
+
+    US-2001: Implementation: Created the class ParserJSON to import the layout of a Warehouse from a JSON file
+
+M	.idea/misc.xml
+M	base.core/pom.xml
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/ImportWarehouseController.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/util/ParserJSON.java
+A	data/warehouse.json
+
+commit 87c9ccd2f5f02e74d2529d1fb628d551be3159f8
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:48:13 2022 +0100
+
+    US-2001: Implementation: Created an InMemory Repository for all entities (Warehouse, WAisle, WRow, AGVDock, Coordinates)
+
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryAGVDockRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryCoordinatesRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryWAisleRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryWRowRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryWarehouseRepository.java
+
+commit 1c26b429ecf0191ad591c7e6a307aaad89171706
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:47:40 2022 +0100
+
+    US-2001: Implementation: Created a JPA Repository for all entities (Warehouse, WAisle, WRow, AGVDock, Coordinates)
+
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaAGVDockRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaCoordinatesRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaWAisleRepository.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaWRowRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaWarehouseRepository.java
+
+commit 7a5213da3b26bc80811b6299db95eade73cef6f8
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:42:23 2022 +0100
+
+    US-2001: Implementation: Created an Action, UI and Printer Class to list AGVDocks
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Actions/ListAGVDockAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ListAGVDockUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Printers/AGVDockPrinter.java
+
+commit 62aeab17c8b9a2c975cf9419635b59f5f8a8c29b
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:42:04 2022 +0100
+
+    US-2001: Implementation: Created an Action, UI and Printer Class to list Coordinates
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Actions/ListCoordinatesAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ListCoordinatesUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Printers/CoordinatesPrinter.java
+
+commit 993d6e1d1e38f38abf367a29e93afb12822c9395
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:40:59 2022 +0100
+
+    US-2001: Implementation: Created an Action, UI and Printer Class to list Warehouses
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Actions/ListWarehouseAction.java
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ListWarehouseUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Printers/WarehousePrinter.java
+
+commit e4e7d2d6f171d820231839300eb1ad32bd027043
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:40:23 2022 +0100
+
+    US-2001: Implementation: Created an Action, UI and Printer Class to list WAisles
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Actions/ListWAisleAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ListWAisleUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Printers/WAislePrinter.java
+
+commit 863bc08bdd2801db55d4ca5e79b2b57c41a90e7f
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:40:06 2022 +0100
+
+    US-2001: Implementation: Created an Action, UI and Printer Class to list WRows
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Actions/ListWRowAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ListWRowUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/Printers/WRowPrinter.java
+
+commit 636c9db9d2398f275b18acdb8b8ad2a981e960ce
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:38:21 2022 +0100
+
+    US-2001: Implementation: Created a new user with the role WAREHOUSE_EMPLOYEE
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/BackofficeUsersBootstrapper.java
+M	base.core/src/main/java/eapli/base/usermanagement/domain/BaseRoles.java
+M	base.core/src/main/java/eapli/base/warehousemanagement/application/ListWarehouseController.java
+
+commit 6736e31e40ff0f346de538859e136dc793d2bad8
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:32:35 2022 +0100
+
+    US-2001: Implementation: Created Controllers to list each entity (Warehouse, WAisle, WRow, AGVDock and Coordinates)
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/ListAGVDockController.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/ListCoordinatesController.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/ListWAisleController.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/ListWRowController.java
+
+commit 04717138949bcef17f354b9a87162e8adf699cf4
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:26:05 2022 +0100
+
+    US-2001: Implementation: Created Coordinates entity
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/domain/Coordinates.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/repositories/CoordinatesRepository.java
+
+commit 0f3bc71921af10fc3c6dce7bab1fab8e1d9e6f89
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:25:52 2022 +0100
+
+    US-2001: Implementation: Created AGVDock entity
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/domain/AGVDock.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/repositories/AGVDocksRepository.java
+
+commit 2809678f2107cfb833b72145026fac21bf6de16d
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:25:30 2022 +0100
+
+    US-2001: Implementation: Created WRow entity
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/domain/WRow.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/repositories/WRowRepository.java
+
+commit dc84e7526ab79685c07100c3ef8d6286bfbcb758
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:25:18 2022 +0100
+
+    US-2001: Implementation: Created WAisle entity
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/domain/WAisle.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/repositories/WAisleRepository.java
+
+commit f76bd6289db5b11ad76395d7345dc5749a506135
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sun May 1 19:17:17 2022 +0100
+
+    US-2001: Implementation: Added AGVDocks field to Warehouse entity
+
+M	base.core/src/main/java/eapli/base/warehousemanagement/domain/Warehouse.java
+M	base.persistence.impl/src/main/resources/META-INF/persistence.xml
+M	run-backoffice.bat
+M	run-backoffice.sh
+
+commit 1c943bb3617937278e3d6b1c40e124ad8d298c4a
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 21:26:06 2022 +0100
+
+    Created an Action, a Menu and a Printer to list all existing Warehouses
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ListWarehouseAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/ListWarehouseUI.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/WarehousePrinter.java
+
+commit a080ba525a8047aabfcc4bd4219fd9a01fd9a354
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 21:25:40 2022 +0100
+
+    Created an Action and a Menu to register and new Warehouse
+
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/RegisterWarehouseAction.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/warehouse/RegisterWarehouseUI.java
+
+commit b85bd196ff91ca970bb6a5b57c0abd58db2d0d99
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 21:25:02 2022 +0100
+
+    Added a new User to the BackofficeUsersBootstrapper
+
+M	base.bootstrappers/src/main/java/eapli/base/infrastructure/bootstrapers/demo/BackofficeUsersBootstrapper.java
+
+commit 0db1fe5e7285c51059b74f7d18905799695e789f
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 21:18:51 2022 +0100
+
+    Renamed the class BasepaRepositoryBase to BaseJpaRepositoryBase
+
+R089	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/BasepaRepositoryBase.java	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/BaseJpaRepositoryBase.java
+
+commit ab9de5fe434f43c1e3e8e3b59cb9d1b1951440b9
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 21:18:23 2022 +0100
+
+    Created InMemory and JPA repositories for the Warehouse entity
+
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/inmemory/InMemoryWarehouseRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaProductRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaWarehouseRepository.java
+
+commit f6fad2eadc05ff300415f08e0066d67897764c48
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 21:16:35 2022 +0100
+
+    Created a controller to register Warehouses, and another one to List them
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/ListWarehouseController.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/ListWarehouseService.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/application/RegisterWarehouseController.java
+
+commit 19f297d26ddc538a19f94bd7295cf6cf3b89d4b4
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 21:15:21 2022 +0100
+
+    Created a class for the Warehouse entity
+
+A	base.core/src/main/java/eapli/base/warehousemanagement/domain/Warehouse.java
+A	base.core/src/main/java/eapli/base/warehousemanagement/repositories/WarehouseRepository.java
+
+commit cd1eacbbf3a82378ba3f181d4b495fe12338a4a1
+Author: Hugo Henrique Almeida Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 18:26:36 2022 +0000
+
+    Updated .gitignore to include ".idea" folder
+
+M	.gitignore
+
+commit bb70eab42080def93f413fae835787fe24170dc1
+Author: Hugo Carvalho <1210813@isep.ipp.pt>
+Date:   Sat Apr 30 19:18:25 2022 +0100
+
+    Fixed an issue with backoffice and bootstrap scripts
+
+M	.idea/misc.xml
+M	run-backoffice.bat
+M	run-backoffice.sh
+M	run-bootstrap.bat

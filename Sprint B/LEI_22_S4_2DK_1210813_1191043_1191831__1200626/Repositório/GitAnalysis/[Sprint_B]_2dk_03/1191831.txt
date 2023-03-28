@@ -1,0 +1,43 @@
+commit 13c33e2a92aaadc1101fec5ec832fef8811fc15b
+Author: Rui Gonçalves <1191831@isep.ipp.pt>
+Date:   Sat Apr 30 16:29:11 2022 +0100
+
+    US1001: Product Menu UI
+
+M	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/MainMenu.java
+A	base.app.backoffice.console/src/main/java/eapli/base/app/backoffice/console/presentation/productmanagement/RegisterProductUI.java
+A	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaProductRepository.java
+M	base.persistence.impl/src/main/java/eapli/base/persistence/impl/jpa/JpaRepositoryFactory.java
+
+commit 95e18b7cc5368fb5d674b18ef534ebb4c13df90f
+Author: Rui Gonçalves <1191831@isep.ipp.pt>
+Date:   Sat Apr 30 16:17:49 2022 +0100
+
+    US1001: Product Repository + Controller
+
+M	base.core/src/main/java/eapli/base/infrastructure/persistence/RepositoryFactory.java
+A	base.core/src/main/java/eapli/base/productmanagement/application/RegisterProductController.java
+R100	base.core/src/main/java/eapli/base/productmanagement/Product.java	base.core/src/main/java/eapli/base/productmanagement/domain/Product.java
+A	base.core/src/main/java/eapli/base/productmanagement/repositories/ProductRepository.java
+
+commit 164800fe634464fd8195754b7633db978ae0e55e
+Author: Rui Gonçalves <1191831@isep.ipp.pt>
+Date:   Sat Apr 30 15:45:46 2022 +0100
+
+    US1001: Product Entity created
+
+A	base.core/src/main/java/eapli/base/productmanagement/Product.java
+
+commit 375a8db7929f67cadfc96f60423de024235e2e26
+Author: Rui Gonçalves <1191831@isep.ipp.pt>
+Date:   Sat Apr 30 15:37:01 2022 +0100
+
+    US1001: Sequence Diagram + System Sequence Diagram + Class Diagram
+
+A	docs/Sprint B/US1001/CD.png
+A	docs/Sprint B/US1001/CD.puml
+A	docs/Sprint B/US1001/SD.png
+A	docs/Sprint B/US1001/SD.puml
+A	docs/Sprint B/US1001/SSD.png
+A	docs/Sprint B/US1001/SSD.puml
+M	run-bootstrap.sh

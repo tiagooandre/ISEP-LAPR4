@@ -1,0 +1,6 @@
+eapli/base/persistence/impl/jpa/JpaQuestionnaireRepository.class
+eapli/base/persistence/impl/jpa/JpaAnswerRepository.class
+eapli/base/persistence/impl/inmemory/InMemoryAnswerRepository.class
+eapli/base/persistence/impl/inmemory/InMemoryQuestionnaireRepository.class
+eapli/base/persistence/impl/jpa/JpaRepositoryFactory.class
+eapli/base/persistence/impl/inmemory/InMemoryRepositoryFactory.class
